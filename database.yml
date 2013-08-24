@@ -1,0 +1,8 @@
+production:
+    database: dashboard
+    username: dashboard
+    password: 1q2w3e4r5t
+    encoding: utf8
+    adapter: mysql
+    host: 127.0.0.1
+    port: 3306

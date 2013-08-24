@@ -1,0 +1,15 @@
+---
+:hierarchy:
+    - hiera:%{environment}
+    - hiera:common
+:backends:
+    - redis
+:redis:
+    :host: localhost
+    :port: 6379
+    :db: 0
+    #:password: nil
+    :soft_connection_failure: true
+:yaml:
+    :datadir: '/etc/puppet/hiera'
+
