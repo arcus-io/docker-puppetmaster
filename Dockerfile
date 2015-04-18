@@ -1,7 +1,7 @@
 FROM ubuntu:12.04
 MAINTAINER Arcus "http://arcus.io"
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe multiverse" > /etc/apt/sources.list
-RUN apt-get update
+#fthis change make the build to succeed.  
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe multiverse" >> /etc/apt/sources.listRUN apt-get update
 RUN apt-get install -y wget
 RUN wget -q http://apt.puppetlabs.com/puppetlabs-release-precise.deb -O /tmp/puppetlabs.deb
 RUN dpkg -i /tmp/puppetlabs.deb
